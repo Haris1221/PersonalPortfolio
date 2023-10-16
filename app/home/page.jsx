@@ -13,14 +13,20 @@ import html from '../img/html.png'
 import css from '../img/css.png'
 import next from '../img/Next.js.png'
 import git from '../img/git.png'
-
+import test from '../img/test.png'
+import shopflix from '../img/shopflix.png'
+import onderland from '../img/onderland.png'
+import tweetar from '../img/tweetar.png'
+import Link from 'next/link'
+import Contact from '../contact/contact'
 
 export default function Page() {
 
   return (
     <main>
-        <div className='banner flex items-center justify-center w-full  '>
+        <div className='banner flex items-center justify-center w-full h-[500px] '>
           <Particle />
+          <div className='newdiv flex flex-col items-center text-center'>
             <motion.div className='intro flex items-center justify-center'
     initial={{ x: -100, opacity: 0}}
     animate={{ x:0, opacity: 1}}
@@ -40,14 +46,15 @@ export default function Page() {
             animate={{ y:0, opacity: 1}}
             transition={{ duration: 1, delay: 1 }}>View my work </motion.a>
         </div>
+        </div>
             <div className='navitems flex justify-end'>
               <p className='text'>home</p> <p className='text'>About</p> <p className='text'>Projects</p> <p className='text'>Contact</p>
         </div>
         <div className='about flex '>
-          <h1 className='about__about'>About</h1>
+          <h1 className='section__intro'>About</h1>
           <div className='container'>
             <motion.div className='left' 
-            initial={{ x:-200, opacity: 0 }}
+            initial={{ x:-400, opacity: 0 }}
             whileInView={{ x:0, opacity: 1 }}
             viewport={{ once: true }}
             transition={ {duration: 1, delay: 0.3}}>
@@ -143,17 +150,85 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div>Projects</div>
-          <div>Projects</div>
-          <div>Projects</div>
-          <div>Projects</div>
-          <div>Projects</div>
-          <div>Projects</div>
-          <div>Projects</div>
-          <div>Projects</div>
-          <div>Projects</div>
-          <div>Projects</div>
         </div>
+          <div className='projects'>
+            <h1 className='section__intro'>Projects</h1>
+            <div className='project-left'>
+              <motion.a href="" className='a'
+              whileHover={{scale:0.95}}
+              transition={{duration:0.2}}
+              >
+                <div className='image__container__left'>
+                  <Image src={test} alt='s' className='image__image'/>
+                </div>
+              </motion.a>
+              <div className='project__info flex'>
+                <h3 className='project__title'>BestMeat <br/> An Online Restaurant App</h3>
+                <p className='p__tag'>FullStack restaurant app built with Next.js and supabase. fully customized API.</p>
+                <Link className='a__projects' href={'/home'}>Live App</Link>
+                <Link className='a__projects' href={'/home'}>Learn More</Link>
+              </div>
+            </div>
+            <div className='project-right'>
+              <div className='project__info flex'>
+                <h3 className='project__title'>BestMeat <br/> An Online Restaurant App</h3>
+                <p className='p__tag'>FullStack restaurant app built with Next.js and supabase. fully customized API.</p>
+                <Link className='a__projects' href={'/home'}>Live App</Link>
+                <Link className='a__projects' href={'/home'}>Learn More</Link>
+              </div>
+              <motion.a href="" className='a'
+              whileHover={{scale:0.95}}
+              transition={{duration:0.2}}>
+                <div className='image__container__right'>
+                  <Image src={shopflix} alt='s' className='image__image'/>
+                </div>
+              </motion.a>
+            </div>
+            <div className='project-left'>
+              <motion.a href="" className='a'
+              whileHover={{scale:0.95}}
+              transition={{duration:0.2}}>
+                <div className='image__container__left'>
+                  <Image src={onderland} alt='s' className='image__image'/>
+                </div>
+              </motion.a>
+              <div className='project__info flex'>
+                <h3 className='project__title'>BestMeat <br/> An Online Restaurant App</h3>
+                <p className='p__tag'>FullStack restaurant app built with Next.js and supabase. fully customized API.</p>
+                <Link className='a__projects' href={'/home'}>Live App</Link>
+                <Link className='a__projects' href={'/home'}>Learn More</Link>
+              </div>
+            </div>
+            <div className='project-right'>
+              <div className='project__info flex'>
+                <h3 className='project__title'>BestMeat <br/> An Online Restaurant App</h3>
+                <p className='p__tag'>FullStack restaurant app built with Next.js and supabase. fully customized API.</p>
+                <Link className='a__projects' href={'/home'}>Live App</Link>
+                <Link className='a__projects' href={'/home'}>Learn More</Link>
+              </div>
+              <motion.a href="" className='a'
+              whileHover={{scale:0.95}}
+              transition={{duration:0.2}}>
+                <div className='image__container__right'>
+                  <Image src={tweetar} alt='s' className='image__image'/>
+                </div>
+              </motion.a>
+            </div>
+            <div className='getInTouch'>
+                <h1 className='section__intro'>Contact</h1>
+                <p className='about__text'>Have a question or want to work together? Leave your details and I'll get back to you as soon as possible.</p>
+                <Contact />
+                </div>
+                <footer className='footer'>
+                  <a href="">
+                    <div className='return'>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24"><title></title><path fill="#fafafa" d="M17.707 10.293l-5-5c-0.391-0.391-1.024-0.391-1.414 0l-5 5c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l4.293-4.293 4.293 4.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414zM17.707 17.293l-5-5c-0.391-0.391-1.024-0.391-1.414 0l-5 5c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l4.293-4.293 4.293 4.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414z"></path></svg>
+                    </div>
+                  </a>
+                  <div>socials</div>
+                  <p>ALHARIS ELHASSAN ©2023</p>
+                </footer>
+          </div>
     </main>
   )
 }

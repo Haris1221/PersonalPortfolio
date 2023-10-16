@@ -46,8 +46,8 @@ export default function particles() {
             value: "#ffffff",
         },
         links: {
-            color: "#ffffff",
-            distance: 150,
+            color: "#aaaaaa",
+            distance: 140,
             enable: true,
             opacity: 0.5,
             width: 1,

@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "autoprefixer": "10.4.16",
+    "emailjs": "^4.0.3",
     "eslint": "8.51.0",
     "eslint-config-next": "13.5.4",
     "framer-motion": "^10.16.4",
