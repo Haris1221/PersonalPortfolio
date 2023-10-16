@@ -163,16 +163,16 @@ export default function Page() {
                 </div>
               </motion.a>
               <div className='project__info flex'>
-                <h3 className='project__title'>BestMeat <br/> An Online Restaurant App</h3>
+                <h3 className='project__title'>BestMeat <br/> Online Restaurant App </h3>
                 <p className='p__tag'>FullStack restaurant app built with Next.js and supabase. fully customized API.</p>
-                <Link className='a__projects' href={'/home'}>Live App</Link>
+                <Link className='a__projects' href='https://bestmeat.vercel.app/home'>Live App</Link>
                 <Link className='a__projects' href={'/home'}>Learn More</Link>
               </div>
             </div>
             <div className='project-right'>
               <div className='project__info flex'>
-                <h3 className='project__title'>BestMeat <br/> An Online Restaurant App</h3>
-                <p className='p__tag'>FullStack restaurant app built with Next.js and supabase. fully customized API.</p>
+                <h3 className='project__title'>ShopFlix <br/> Video straming service app</h3>
+                <p className='p__tag'> FullStack video streaming service app built with React, Node.js, Express.js, and MongoDB </p>
                 <Link className='a__projects' href={'/home'}>Live App</Link>
                 <Link className='a__projects' href={'/home'}>Learn More</Link>
               </div>
@@ -193,16 +193,16 @@ export default function Page() {
                 </div>
               </motion.a>
               <div className='project__info flex'>
-                <h3 className='project__title'>BestMeat <br/> An Online Restaurant App</h3>
-                <p className='p__tag'>FullStack restaurant app built with Next.js and supabase. fully customized API.</p>
+                <h3 className='project__title'>Onderland <br/> Food journal app </h3>
+                <p className='p__tag'>FullStack web application uses CRUD to create a food journal allowing the user to track their meals throughout the day.</p>
                 <Link className='a__projects' href={'/home'}>Live App</Link>
                 <Link className='a__projects' href={'/home'}>Learn More</Link>
               </div>
             </div>
             <div className='project-right'>
               <div className='project__info flex'>
-                <h3 className='project__title'>BestMeat <br/> An Online Restaurant App</h3>
-                <p className='p__tag'>FullStack restaurant app built with Next.js and supabase. fully customized API.</p>
+                <h3 className='project__title'>Tweetar <br/> Social media app </h3>
+                <p className='p__tag'>FullStack social media application built with Node.js, Express.js, and MongoDB.</p>
                 <Link className='a__projects' href={'/home'}>Live App</Link>
                 <Link className='a__projects' href={'/home'}>Learn More</Link>
               </div>
