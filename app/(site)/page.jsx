@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import {motion} from 'framer-motion'
+import {easeIn, motion} from 'framer-motion'
 import profile from '../img/profile.png' 
 import Image from 'next/image'
 import Particle from '../particles/particles'
@@ -26,7 +26,7 @@ export default function Page() {
 
   function scroll(e){
     e.preventDefault()
-    window.scrollTo({top: 0, behavior: 'smooth'})
+    window.scrollTo({top: 0, behavior: 'ease-in'})
   }
 
   return (
@@ -233,10 +233,10 @@ export default function Page() {
                     </button>
                   </a>
                   <div className='socials'>
-                    <a href='https://github.com/Haris1221'>
-                      <Image src={github} alt='g'/>
-                      </a>
-                    <Image src={mail} alt='g'/>
+                    <Link href='https://github.com/Haris1221'>
+                      <Image src={github} alt='g' className='w-[50px]'/>
+                      </Link>
+                    <Image src={mail} alt='g' className='w-[50px]' />
                   </div>
                   <p>ALHARIS ELHASSAN ©2023</p>
                 </footer>

@@ -341,8 +341,9 @@ form input[type="submit"] {
 .socials{
   display: flex;
   flex-direction: row;
-  width: 50px;
   align-items: center;
+  width: 300px;
+  height: auto;
   justify-content: center;
   gap: 10px;
   cursor: pointer;
