@@ -19,6 +19,8 @@ import onderland from '../img/onderland.png'
 import tweetar from '../img/tweetar.png'
 import Link from 'next/link'
 import Contact from '../contact/contact'
+import github from '../img/github.png'
+import mail from '../img/mail.png'
 
 export default function Page() {
 
@@ -154,7 +156,7 @@ export default function Page() {
           <div className='projects'>
             <h1 className='section__intro'>Projects</h1>
             <div className='project-left'>
-              <motion.a href="" className='a'
+              <motion.a  className='a'
               whileHover={{scale:0.95}}
               transition={{duration:0.2}}
               >
@@ -166,17 +168,17 @@ export default function Page() {
                 <h3 className='project__title'>BestMeat <br/> Online Restaurant App </h3>
                 <p className='p__tag'>FullStack restaurant app built with Next.js and supabase. fully customized API.</p>
                 <Link className='a__projects' href='https://bestmeat.vercel.app/home'>Live App</Link>
-                <Link className='a__projects' href={'/home'}>Learn More</Link>
+                <Link className='a__projects' href='https://github.com/Haris1221/bestmeat'>Learn More</Link>
               </div>
             </div>
             <div className='project-right'>
               <div className='project__info flex'>
                 <h3 className='project__title'>ShopFlix <br/> Video straming service app</h3>
                 <p className='p__tag'> FullStack video streaming service app built with React, Node.js, Express.js, and MongoDB </p>
-                <Link className='a__projects' href={'/home'}>Live App</Link>
-                <Link className='a__projects' href={'/home'}>Learn More</Link>
+                <Link className='a__projects' href='https://shopflix.onrender.com/'>Live App</Link>
+                <Link className='a__projects' href='https://github.com/Haris1221/ShopFlix-haris'>Learn More</Link>
               </div>
-              <motion.a href="" className='a'
+              <motion.a  className='a'
               whileHover={{scale:0.95}}
               transition={{duration:0.2}}>
                 <div className='image__container__right'>
@@ -185,7 +187,7 @@ export default function Page() {
               </motion.a>
             </div>
             <div className='project-left'>
-              <motion.a href="" className='a'
+              <motion.a  className='a'
               whileHover={{scale:0.95}}
               transition={{duration:0.2}}>
                 <div className='image__container__left'>
@@ -195,18 +197,18 @@ export default function Page() {
               <div className='project__info flex'>
                 <h3 className='project__title'>Onderland <br/> Food journal app </h3>
                 <p className='p__tag'>FullStack web application uses CRUD to create a food journal allowing the user to track their meals throughout the day.</p>
-                <Link className='a__projects' href={'/home'}>Live App</Link>
-                <Link className='a__projects' href={'/home'}>Learn More</Link>
+                <Link className='a__projects' href={''}>Live App</Link>
+                <Link className='a__projects' href='https://github.com/Haris1221/onederland'>Learn More</Link>
               </div>
             </div>
             <div className='project-right'>
               <div className='project__info flex'>
                 <h3 className='project__title'>Tweetar <br/> Social media app </h3>
                 <p className='p__tag'>FullStack social media application built with Node.js, Express.js, and MongoDB.</p>
-                <Link className='a__projects' href={'/home'}>Live App</Link>
-                <Link className='a__projects' href={'/home'}>Learn More</Link>
+                <Link className='a__projects' href='https://tweetar.fly.dev/'>Live App</Link>
+                <Link className='a__projects' href='https://git.generalassemb.ly/haris/Project-2'>Learn More</Link>
               </div>
-              <motion.a href="" className='a'
+              <motion.a  className='a'
               whileHover={{scale:0.95}}
               transition={{duration:0.2}}>
                 <div className='image__container__right'>
@@ -220,12 +222,17 @@ export default function Page() {
                 <Contact />
                 </div>
                 <footer className='footer'>
-                  <a href="">
+                  <a className='point cursor-pointer'>
                     <div className='return'>
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24"><title></title><path fill="#fafafa" d="M17.707 10.293l-5-5c-0.391-0.391-1.024-0.391-1.414 0l-5 5c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l4.293-4.293 4.293 4.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414zM17.707 17.293l-5-5c-0.391-0.391-1.024-0.391-1.414 0l-5 5c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l4.293-4.293 4.293 4.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414z"></path></svg>
                     </div>
                   </a>
-                  <div>socials</div>
+                  <div className='socials'>
+                    <a href='https://github.com/Haris1221'>
+                      <Image src={github} alt='g'/>
+                      </a>
+                    <Image src={mail} alt='g'/>
+                  </div>
                   <p>ALHARIS ELHASSAN ©2023</p>
                 </footer>
           </div>
