@@ -18,7 +18,7 @@ import shopflix from '../img/shopflix.png'
 import onderland from '../img/onderland.png'
 import tweetar from '../img/tweetar.png'
 import Link from 'next/link'
-import Contact from '../contact/contact'
+import Contact from '../component/contact'
 import github from '../img/github.png'
 import mail from '../img/mail.png'
 
