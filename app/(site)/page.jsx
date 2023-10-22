@@ -26,7 +26,11 @@ export default function Page() {
 
   function scroll(e){
     e.preventDefault()
-    window.scrollTo({top: 0, behavior: 'ease-in'})
+    window.scrollTo({top: 0, behavior: 'smooth'})
+  }
+  function work(e){
+    e.preventDefault()
+    window.scrollTo({top: 1800, behavior: 'smooth'})
   }
 
   return (
@@ -48,10 +52,10 @@ export default function Page() {
             transition={{ duration: 1.3 }}>
               I&apos;m a full stack web developer
             </motion.div>
-            <motion.a className='view flex' 
+            <motion.button onClick={work} className='view flex' 
             initial={{ y: 100, opacity: 0}}
             animate={{ y:0, opacity: 1}}
-            transition={{ duration: 1, delay: 1 }}>View my work </motion.a>
+            transition={{ duration: 1, delay: 1 }}>View my work </motion.button>
         </div>
         </div>
             <div className='navitems flex justify-end'>
