@@ -32,6 +32,14 @@ export default function Page() {
     e.preventDefault()
     window.scrollTo({top: 1800, behavior: 'smooth'})
   }
+  function about(e){
+    e.preventDefault()
+    window.scrollTo({top: 1000, behavior: 'smooth'})
+  }
+  function contact(e){
+    e.preventDefault()
+    window.scrollTo({top: 5000, behavior: 'smooth'})
+  }
 
   return (
     <main>
@@ -59,7 +67,7 @@ export default function Page() {
         </div>
         </div>
             <div className='navitems flex justify-end'>
-              <p className='text'>home</p> <p className='text'>About</p> <p className='text'>Projects</p> <p className='text'>Contact</p>
+              <p onClick={scroll} className='text'>home</p> <p onClick={about} className='text'>About</p> <p onClick={work} className='text'>Projects</p> <p onClick={contact} className='text'>Contact</p>
         </div>
         <div className='about flex '>
           <h1 className='section__intro'>About</h1>
