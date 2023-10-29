@@ -192,6 +192,7 @@ export default function Page() {
               <div className='project__info flex'>
                 <h3 className='project__title'>ShopFlix <br/> Video straming service app</h3>
                 <p className='p__tag'> FullStack video streaming service app built with React, Node.js, Express.js, and MongoDB </p>
+                <p>Disclaimer: The website has been struck for copyright but it is fully safe to explore.(guess it was too close to being real :P)</p>
                 <Link className='a__projects' href='https://shopflix.onrender.com/'>Live App</Link>
                 <Link className='a__projects' href='https://github.com/Haris1221/ShopFlix-haris'>Learn More</Link>
               </div>
