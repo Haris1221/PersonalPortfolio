@@ -21,6 +21,7 @@ import Link from 'next/link'
 import Contact from '../component/contact'
 import github from '../img/github.png'
 import mail from '../img/mail.png'
+import sitegram from '../img/sitegram.png'
 
 export default function Page() {
 
@@ -178,14 +179,14 @@ export default function Page() {
               transition={{duration:0.2}}
               >
                 <div className='image__container__left'>
-                  <Image src={test} alt='s' className='image__image'/>
+                  <Image src={sitegram} alt='s' className='image__image'/>
                 </div>
               </motion.a>
               <div className='project__info flex'>
-                <h3 className='project__title'>BestMeat <br/> Online Restaurant App </h3>
-                <p className='p__tag'>FullStack restaurant app built with Next.js and supabase. fully customized API.</p>
-                <Link className='a__projects' href='https://bestmeat.vercel.app/home'>Live App</Link>
-                <Link className='a__projects' href='https://github.com/Haris1221/bestmeat'>Learn More</Link>
+                <h3 className='project__title'>Sitegram <br/> Social media app </h3>
+                <p className='p__tag'>FullStack social media Instagram like app. made using Vite and Appwrite.</p>
+                <Link className='a__projects' href='https://sitegram.vercel.app/'>Live App</Link>
+                <Link className='a__projects' href='https://github.com/Haris1221/SiteGram'>Learn More</Link>
               </div>
             </div>
             <div className='project-right'>
