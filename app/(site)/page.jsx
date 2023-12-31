@@ -13,10 +13,9 @@ import html from '../img/html.png'
 import css from '../img/css.png'
 import next from '../img/Next.js.png'
 import git from '../img/git.png'
-import test from '../img/test.png'
 import shopflix from '../img/shopflix.png'
 import onderland from '../img/onderland.png'
-import tweetar from '../img/tweetar.png'
+import shirt from '../img/3D.png'
 import Link from 'next/link'
 import Contact from '../component/contact'
 import github from '../img/github.png'
@@ -222,16 +221,16 @@ export default function Page() {
             </div>
             <div className='project-right'>
               <div className='project__info flex'>
-                <h3 className='project__title'>Tweetar <br/> Social media app </h3>
-                <p className='p__tag'>FullStack social media application built with Node.js, Express.js, and MongoDB.</p>
-                <Link className='a__projects' href='https://tweetar.fly.dev/'>Live App</Link>
-                <Link className='a__projects' href='https://git.generalassemb.ly/haris/Project-2'>Learn More</Link>
+                <h3 className='project__title'>3DShirt <br/> 3D customizer website </h3>
+                <p className='p__tag'> Apply any color to the 3D shirt/swag for personalized styling.</p>
+                <Link className='a__projects' href='https://3dshirt-nine.vercel.app/'>Live App</Link>
+                <Link className='a__projects' href='https://github.com/Haris1221/3DShirt'>Learn More</Link>
               </div>
               <motion.a  className='a'
               whileHover={{scale:0.95}}
               transition={{duration:0.2}}>
                 <div className='image__container__right'>
-                  <Image src={tweetar} alt='s' className='image__image'/>
+                  <Image src={shirt} alt='s' className='image__image'/>
                 </div>
               </motion.a>
             </div>
