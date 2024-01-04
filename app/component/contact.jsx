@@ -15,7 +15,7 @@ emailjs.sendForm('service_f7z9tjl', 'template_xkfvxmc', form.current, 'YOUR_PUBL
     });
 };
 return(
-<form ref={form} onSubmit={sendEmail}>
+<form className='form' ref={form} onSubmit={sendEmail}>
     <label>Name
     <input type="text" name="user_name" />
     </label>
