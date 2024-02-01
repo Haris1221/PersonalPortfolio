@@ -302,6 +302,23 @@ body {
     width: 100%;
   }
 
+@media screen and (max-width: 620px){
+  .text{
+    font-size: 12px;
+  }
+  .navitems{
+    transform: scale(0.98);
+  }
+  .about{
+    transform: scale(0.4);
+    margin-left: -80px;
+    margin-bottom: -500px;
+  }
+  .projects{
+    transform: scale(0.6);
+  }
+}
+
 }
 .getInTouch{
   display: flex;
