@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import shopflix from '../img/shopflix.png'
-import onderland from '../img/onderland.png'
 import shirt from '../img/3D.png'
 import sitegram from '../img/sitegram.png'
+import refine from '../img/refine.gif'
 
 
 const Projects = () => {
@@ -18,14 +18,14 @@ const Projects = () => {
               transition={{duration:0.2}}
               >
                 <div className='image__container__left'>
-                  <Image src={sitegram} alt='s' className='image__image'/>
+                  <Image src={refine} alt='s' className='image__image'/>
                 </div>
               </motion.a>
               <div className='project__info flex'>
-                <h3 className='project__title'>Sitegram <br/> Social media app </h3>
-                <p className='p__tag'>FullStack social media Instagram like app. made using Vite and Appwrite.</p>
-                <Link className='a__projects' href='https://sitegram.vercel.app/'>Live App</Link>
-                <Link className='a__projects' href='https://github.com/Haris1221/SiteGram'>Learn More</Link>
+                <h3 className='project__title'>Refine <br/> Dashboard app </h3>
+                <p className='p__tag'>Build your React-based internal tools, admin panels, dashboards, B2B apps with flexibility in mind.</p>
+                <Link className='a__projects' href='https://refine-dashboard-two.vercel.app/'>Live App</Link>
+                <Link className='a__projects' href='https://github.com/Haris1221/RefineDashboard'>Learn More</Link>
               </div>
             </div>
             <div className='project-right'>
@@ -48,14 +48,14 @@ const Projects = () => {
               whileHover={{scale:0.95}}
               transition={{duration:0.2}}>
                 <div className='image__container__left'>
-                  <Image src={onderland} alt='s' className='image__image'/>
+                  <Image src={sitegram} alt='s' className='image__image'/>
                 </div>
               </motion.a>
               <div className='project__info flex'>
-                <h3 className='project__title'>Onderland <br/> Food journal app </h3>
-                <p className='p__tag'>FullStack web application uses CRUD to create a food journal allowing the user to track their meals throughout the day.</p>
-                <Link className='a__projects' href={''}>Live App</Link>
-                <Link className='a__projects' href='https://github.com/Haris1221/onederland'>Learn More</Link>
+                <h3 className='project__title'>Sitegram <br/> Social media app </h3>
+                <p className='p__tag'>FullStack social media Instagram like app. made using Vite and Appwrite.</p>
+                <Link className='a__projects' href='https://sitegram.vercel.app/'>Live App</Link>
+                <Link className='a__projects' href='https://github.com/Haris1221/SiteGram'>Learn More</Link>
               </div>
             </div>
             <div className='project-right'>
